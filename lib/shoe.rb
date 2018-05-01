@@ -5,15 +5,10 @@ class Shoe
 
   BRANDS = []
   
-  def initialize(brand)
-    @brand = brand
-    BRANDS << brand
-    end
-    
-    def brand=(brand)
+  def brand=(brand)
       @brands = brand 
-      BRANDS.uniq 
-    end 
+      BRANDS << brand 
+  end 
   
   def cobble
     self.condition = "new"
